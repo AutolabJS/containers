@@ -19,7 +19,3 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
 RUN apt-get update && apt-get install --force-yes -y nodejs build-essential git
 RUN rm nodesource_setup.sh
-
-COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-
-ENTRYPOINT ["docker-entrypoint.sh"]
