@@ -12,10 +12,9 @@ ENV LANG en_IN.UTF-8
 ENV LANGUAGE en_IN
 ENV LC_ALL en_IN.UTF-8
 # verify modified configuration
-RUN dpkg-reconfigure --frontend noninteractive locales
-
-RUN apt-get update && apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
-RUN bash nodesource_setup.sh
-RUN apt-get update && apt-get install --force-yes -y nodejs build-essential git
-RUN rm nodesource_setup.sh
+RUN dpkg-reconfigure --frontend noninteractive locales && \
+	apt-get update && apt-get install -y curl && \
+	curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && \
+	bash nodesource_setup.sh && \
+	apt-get update && apt-get install --force-yes -y nodejs build-essential git && \
+	rm nodesource_setup.sh
