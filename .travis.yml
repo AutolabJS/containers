@@ -7,7 +7,6 @@ branches:
 notifications:
   email:
     recipients:
-      - kaushikrohit325@gmail.com
       - prasad.talasila@eng.au.dk
     on_success: change
     on_failure: always
