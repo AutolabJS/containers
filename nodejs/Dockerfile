@@ -18,3 +18,4 @@ RUN dpkg-reconfigure --frontend noninteractive locales && \
     bash nodesource_setup.sh && \
     apt-get update && apt-get install --force-yes -y nodejs build-essential git && \
     rm nodesource_setup.sh
+
