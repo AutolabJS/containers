@@ -17,4 +17,5 @@ RUN dpkg-reconfigure --frontend noninteractive locales && \
     curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && \
     bash nodesource_setup.sh && \
     apt-get update && apt-get install --force-yes -y nodejs build-essential git && \
-rm nodesource_setup.sh
+    rm nodesource_setup.sh
+

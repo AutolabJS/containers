@@ -25,5 +25,6 @@ RUN apt-get install -y software-properties-common && \
     apt-get update && \
     echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | \
     debconf-set-selections && \
-    apt-get install -y --force-yes oracle-java8-installer && \
-apt-get install -y gcc-6 g++-6
+    apt-get install -y --force-yes oracle-java8-installer && 
+    apt-get install -y gcc-6 g++-6
+
